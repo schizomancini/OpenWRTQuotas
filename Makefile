@@ -15,12 +15,12 @@ REPO_DIR=gh-pages/releases/openwrt/generic
 
 ifdef SELFCONTAINED
   # opkg info busybox | grep Architecture
-  ARCH=ramips_24kec
+  ARCH=mips_mips32
 
   # values from /etc/openwrt_release:
-  TARGET=ramips/rt305x
-  RELEASE_NAME=chaos_calmer
-  RELEASE_VERS=15.05.1
+  TARGET=brcm63xx/generic
+  RELEASE_NAME=openwrt
+  RELEASE_VERS=18.06.7
   REPO_DIR=gh-pages/releases/openwrt/ramips/$(RELEASE_VERS)
 
   RELEASE=$(RELEASE_NAME)/$(RELEASE_VERS)
